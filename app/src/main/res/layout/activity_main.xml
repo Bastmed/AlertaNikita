@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Gordo Alerta"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- SECCIÓN DE PERMISOS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para que la aplicación funcione en segundo plano y abra Chrome sola, debes activar estos tres permisos obligatorios:"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnPermisoNotificaciones"
+            android:layout_width="263dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="8dp"
+            android:text="1. Dar Acceso a Notificaciones" />
+
+        <Button
+            android:id="@+id/btnPermisoBateria"
+            android:layout_width="264dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="8dp"
+            android:text="2. Batería (Sin Restricciones)" />
+
+        <Button
+            android:id="@+id/btnPermisoSobreponer"
+            android:layout_width="265dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="32dp"
+            android:text="3. Mostrar sobre otras apps" />
+
+        <!-- SECCIÓN DE SONIDOS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración de Sonidos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Código Standard (Ej: Keys largas)"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinnerStandard"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Código Promocional (Tarkov Normal)"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinnerPromo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Código Promocional (Tarkov Arena)"
+            android:textStyle="bold"
+            android:textColor="#FF9800"/>
+        <Spinner
+            android:id="@+id/spinnerArena"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Alerta Falsa / Sin código visible"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinnerAviso"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Los cambios se guardan automáticamente."
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>
